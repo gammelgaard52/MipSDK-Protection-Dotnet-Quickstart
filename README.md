@@ -64,6 +64,14 @@ The **Application registration** screen should now be displaying your new applic
 4. Select **Delegated permissions**
 5. Check **user_impersonation** and select **Add permissions** at the bottom of the screen.
 6. In the **API permissions** menu, select **Grant admin consent for <TENANT NAME>** and confirm.
+7. **OPTIONAL:** In combination with Double Key Encryption, continue the next steps. Otherwise continue to next topic.
+   Ensure to add your Double Key Encryption broker Application Registration to your new **MipSdk-Sample-Apps** Application Registration.
+9. Select **Add a permission**
+10. Select **APIs my organization uses**
+11. Search for your **Double Key Encryption broker** application
+12. Select **Delegated permissions**
+13. Check **user_impersonation** and select **Add permissions** at the bottom of the screen.
+14. In the **API permissions** menu, select **Grant admin consent for <TENANT NAME>** and confirm.
 
 ### Set Redirect URI
 
