@@ -32,6 +32,11 @@ namespace mipsdk_dotnet_protection_quickstart
             // Create MipConfiguration Object
             MipConfiguration mipConfiguration = new MipConfiguration(appInfo, "mip_data", LogLevel.Trace, false);
 
+            //Enable DKE
+            Dictionary<FlightingFeature, bool> featureSettings = mipConfiguration.FeatureSettingsOverride ?? new Dictionary<FlightingFeature, bool>();
+            featureSettings[FlightingFeature.DoubleKey] = true;
+            mipConfiguration.FeatureSettingsOverride = featureSettings;
+            
             // Create MipContext using MipConfiguration
             mipContext = MIP.CreateMipContext(mipConfiguration);
 
